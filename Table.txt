@@ -1,0 +1,54 @@
+Table:
+Tables are used to display data and to organize data.
+
+Example:
+
+import React from 'react';
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table';
+
+/**
+ * A simple table demonstrating the hierarchy of the `Table` component and its sub-components.
+ */
+const TableExampleSimple = () => (
+  <Table>
+    <TableHeader>
+      <TableRow>
+        <TableHeaderColumn>ID</TableHeaderColumn>
+        <TableHeaderColumn>Name</TableHeaderColumn>
+        <TableHeaderColumn>Status</TableHeaderColumn>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableRowColumn>123</TableRowColumn>
+        <TableRowColumn>abc</TableRowColumn>
+        <TableRowColumn>Employed</TableRowColumn>
+      </TableRow>
+      <TableRow>
+        <TableRowColumn>345</TableRowColumn>
+        <TableRowColumn>xyz</TableRowColumn>
+        <TableRowColumn>Unemployed</TableRowColumn>
+      </TableRow>
+      <TableRow>
+        <TableRowColumn>678</TableRowColumn>
+        <TableRowColumn>fgdjdds/TableRowColumn>
+        <TableRowColumn>Employed</TableRowColumn>
+      </TableRow>
+      <TableRow>
+        <TableRowColumn>666</TableRowColumn>
+        <TableRowColumn>vcbdhj</TableRowColumn>
+        <TableRowColumn>Employed</TableRowColumn>
+      </TableRow>
+      
+    </TableBody>
+  </Table>
+);
+
+export default TableExampleSimple;
