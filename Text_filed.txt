@@ -1,0 +1,83 @@
+Text Field:
+It allows user to input,edit and select the text.
+Text fields reside in forms but we can see them in other places, like dialog boxes and search.
+
+Text Field types:
+Single-line:When the text entered is longer than the input line, it automatically scrolls left as the cursor reaches the right edge of the field. 
+Multi-line:Multi-line text fields wrap text onto a new line by expanding the bottom of the field, shifting screen elements downward. 
+Text area:Text areas are taller than text fields and wrap overflow text onto a new line. They scroll vertically when the cursor reaches the bottom of the field.
+
+Input types:
+Formatted inputs
+Nested menus & pickers
+
+States:
+
+Text fields have two major states: 
+enabled or disabled.
+
+In the enabled state, these user interactions:
+Idle
+Hover
+Pressed
+Focused
+Text field input can be either:
+
+Empty or filled
+Valid or invalid
+
+Example:
+import React from 'react';
+import TextField from 'material-ui/TextField';
+
+const TextFieldExampleSimple = () => (
+  <div>
+    <TextField
+      hintText="Hint Text"
+    /><br />
+    <br />
+    <TextField
+      hintText="The hint text can be as long as you want, it will wrap."
+    /><br />
+    <TextField
+      id="text-field-default"
+      defaultValue="Default Value"
+    /><br />
+    <TextField
+      hintText="Hint Text"
+      floatingLabelText="Floating Label Text"
+    /><br />
+    <TextField
+      defaultValue="Default Value"
+      floatingLabelText="Floating Label Text"
+    /><br />
+    <TextField
+      hintText="Hint Text"
+      floatingLabelText="Fixed Floating Label Text"
+      floatingLabelFixed={true}
+    /><br />
+    <TextField
+      hintText="Password Field"
+      floatingLabelText="Password"
+      type="password"
+    /><br />
+    <TextField
+      hintText="MultiLine with rows: 2 and rowsMax: 4"
+      multiLine={true}
+      rows={2}
+      rowsMax={4}
+    /><br />
+    <TextField
+      hintText="Message Field"
+      floatingLabelText="MultiLine and FloatingLabel"
+      multiLine={true}
+      rows={2}
+    /><br />
+    <TextField
+      hintText="Full width"
+      fullWidth={true}
+    />
+  </div>
+);
+
+export default TextFieldExampleSimple;
